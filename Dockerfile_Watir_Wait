@@ -6,6 +6,6 @@ RUN apt-get update && apt-get install jq -y
 
 RUN gem install watir
 
-COPY wait-for-grid.sh .
+COPY wait-for-grid.sh bulletin_board.rb /usr/src/test
 
 RUN chmod +x wait-for-grid.sh
