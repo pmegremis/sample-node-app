@@ -10,4 +10,4 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v1
       -name: Build the docker-compose stack
-       run: docker-compose -f docker-compose.yml up --build --abort-on-container-exit --build
+        run: docker-compose -f docker-compose.yml up --build --abort-on-container-exit --build
