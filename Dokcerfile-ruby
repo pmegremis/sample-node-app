@@ -1,0 +1,9 @@
+From ruby:2.6.3
+
+RUN gem install watir
+
+COPY bulletin_board.rb /tmp/bulletin_board.rb
+
+RUN ruby /tmp/bulletin_board.rb
+
+# The things that stay the same most should go at the end

@@ -1,0 +1,7 @@
+FROM ruby:2.6.3
+
+RUN gem install watir
+
+COPY bulletin_board.rb /tmp/bulletin_board.rb
+
+CMD ruby /tmp/bulletin_board.rb
